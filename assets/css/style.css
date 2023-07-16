@@ -324,7 +324,7 @@ ul{
     background-color: #fcfcfc;
     border-top:2px solid #eee;
     border-bottom: 2px solid #eee;
-    padding: 20px;
+    padding: 60px;
     margin: 30px 0px ;
 
     
@@ -678,5 +678,11 @@ ul{
     margin-top: 1px;
     border: 1px solid #fff;
     border-radius: 3px;
+}
+
+/*Portfolio page*/
+
+.my-navbar{
+    font-size: 14px;
 }
 
