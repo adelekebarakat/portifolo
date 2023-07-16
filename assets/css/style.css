@@ -431,6 +431,15 @@ ul{
     left: 15px;
     bottom: 3px;
 }
+.certificate-item{
+    transition: transform .2s ease-in-out;
+    
+}
+.certificate-item:hover{
+    transform: translateY(-10px);
+    box-shadow: #777 5px 5px;
+
+}
 .certi-content {
     display: table-cell;
     width: 100%;
