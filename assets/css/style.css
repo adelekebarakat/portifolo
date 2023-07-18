@@ -833,7 +833,7 @@ a{
 .myblog .mask::after{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: -250%;
     margin: -22px 0 0 -22px;
     width: 44px;
     line-height: 44px;
