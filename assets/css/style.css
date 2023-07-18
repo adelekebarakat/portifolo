@@ -694,4 +694,173 @@ ul{
 .my-navbar{
     font-size: 14px;
 }
+.port-Image{
 
+}
+.myfigure{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    visibility: visible;
+    transition: 0.5s all ease-in-out;
+    overflow: hidden;
+    margin: 8px;
+    border-radius: 12px;
+
+}
+.myfigure:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+.img-portfolio{
+    position: relative;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    border-radius: 8px;
+
+}
+.myfigure i {
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #007ced;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    /* opacity: 0; */
+    transition: all 0.3s ease-in-out;
+}
+.myfigure a {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+a{
+    text-decoration: none;
+}
+.myfigure .name{
+    display: inline-block;
+    padding: 4px 10px;
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    top: 20px;
+    left: 20px;
+    max-width: calc(100% - 67px);
+    border-radius: 5px;
+    position: absolute;
+}
+.myfigure .category {
+    display: inline-block;
+    padding: 3px 7px;
+    background-color: #fff;
+    color: #222;
+    font-size: 11px;
+    line-height: 1.2em;
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+    border-radius: 5px;
+    /* opacity: 0; */
+}
+
+
+/* Blog page */
+.myblog {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    visibility: visible;
+    transition: 0.5s all ease-in-out;
+    overflow: hidden;
+    margin: 8px;
+    border-radius: 12px;
+
+}
+.myblog:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.05); 
+}
+.myblog i{
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #007ced;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    /* opacity: 0; */
+    transition: all 0.3s ease-in-out;
+}
+.myblog a{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+.myblog .name {
+    display: inline-block;
+    padding: 4px 10px;
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    top: 20px;
+    left: 20px;
+    max-width: calc(100% - 67px);
+    border-radius: 5px;
+    position: absolute;
+}
+.myblog .mask::after{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -22px 0 0 -22px;
+    width: 44px;
+    line-height: 44px;
+    font-size: 44px;
+    text-align: center;
+    content: "\e62e";
+    color: #fff;
+}
+.mask{
+    position: absolute;
+    background: #4f565e;
+    background: rgba(0,0,0,.12);
+    display: inline-block;
+    font-family: 'Pe-icon-7-stroke';
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+
+}
