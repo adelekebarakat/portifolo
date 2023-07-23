@@ -27,7 +27,7 @@
                 <div class="me-auto"></div>
                 <ul class="navbar-nav  mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">About me</a>
+                    <a class="nav-link" aria-current="page" href="index.html">About me</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="resume.html">Resume</a>
@@ -43,7 +43,7 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Extra</a>
+                    <a class="nav-link active" href="Extra.html">Extra</a>
                   </li>
                   
                  
@@ -128,39 +128,43 @@
                     </h2>
                   </div>
 
-                  <div class="accordion-page">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                              Lorem ipsum dolor sit amet.
-                            </button>
-                          </h2>
-                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptas repellat animi id, ratione natus quas saepe placeat modi nobis.</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                             Lorem ipsum dolor sit amet.
-                            </button>
-                          </h2>
-                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui dolorem vero, reprehenderit, rem distinctio, impedit porro eligendi praesentium iste officiis voluptas blanditiis nesciunt iusto esse ratione assumenda neque! Explicabo!.</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                              Lorem ipsum dolor sit amet consectetur.
-                            </button>
-                          </h2>
-                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur obcaecati, omnis, nam expedita iusto recusandae temporibus quas quos optio architecto saepe accusantium dolor, laborum minima.</div>
-                          </div>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                       Lorem ipsum dolor sit amet.
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit saepe velit porro ab numquam aperiam molestiae dolorum autem voluptate nostrum!
                         </div>
                       </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                         Lorem ipsum dolor sit amet consectetur.
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugiat soluta officiis molestias, culpa debitis nostrum, ea maxime itaque dolor obcaecati temporibus corrupti doloribus ipsam similique sint repellendus odit blanditiis!
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                         Lorem ipsum, dolor sit amet consectetur adipisicing.
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta labore, velit, laborum debitis veniam cum alias rem aliquam maiores expedita autem minima numquam dignissimos iste maxime saepe! Distinctio, quaerat.
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
 
@@ -226,7 +230,7 @@
           </div>
         </div>
         <div class="copyright">
-          <p>© 2022 All rights reserved. temmydev.</p>
+          <p>© <span id="currentYear"></span> All rights reserved. temmydev.</p>
         </div>
        </footer>
 
@@ -235,5 +239,6 @@
     </div>
     
  <script src="assets/js/bootstrap.bundle.min.js"></script>
+ <script src="assets/js/date.js"></script>
 </body>
 </html>
