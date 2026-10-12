@@ -1,0 +1,67 @@
+/* Resume page styles. Scoped to .modern-resume to avoid changing legacy pages. */
+.modern-resume { background:#f7f8fc; color:#19233a; }
+.modern-resume .resume-hero { padding-top:76px; padding-bottom:48px; max-width:1140px; }
+.modern-resume .resume-hero h1 { font-family:"Manrope",sans-serif; font-size:clamp(42px,6vw,66px); font-weight:800; letter-spacing:-2.5px; line-height:1.1; margin:0 0 20px; }
+.modern-resume .resume-hero h1 span { color:#6957e8; }
+.modern-resume .resume-lead { color:#68738a; font-size:17px; line-height:1.85; max-width:760px; margin-bottom:24px; }
+.modern-resume .resume-actions { display:flex; gap:12px; flex-wrap:wrap; }
+.modern-resume .resume-note { color:#737d91; font-size:12px; line-height:1.7; margin:24px 0 0; max-width:760px; }
+.modern-resume .resume-note i { color:#6957e8; margin-right:7px; }
+.modern-resume .resume-layout { display:grid; grid-template-columns:minmax(0,1.55fr) minmax(280px,.85fr); gap:28px; padding-top:20px; padding-bottom:84px; }
+.modern-resume .resume-section { background:#fff; border:1px solid #e9ebf3; border-radius:20px; padding:30px; margin-bottom:24px; box-shadow:0 12px 36px rgba(25,35,58,.035); }
+.modern-resume .resume-section-heading { display:flex; gap:15px; align-items:flex-start; margin-bottom:26px; }
+.modern-resume .section-index { display:grid; place-items:center; flex:0 0 39px; height:39px; border-radius:12px; background:#f0edff; color:#6957e8; font-family:"Manrope",sans-serif; font-size:12px; font-weight:800; }
+.modern-resume .resume-section-heading .eyebrow,.modern-resume .side-card .eyebrow { margin:0 0 6px; font-size:9px; letter-spacing:1.6px; }
+.modern-resume .resume-section-heading h2,.modern-resume .side-card h2,.modern-resume .side-cta h2 { font-family:"Manrope",sans-serif; color:#19233a; font-size:22px; font-weight:800; letter-spacing:-.6px; margin:0; }
+.modern-resume .resume-timeline { border-left:1px solid #e3e6f0; margin-left:7px; padding-left:24px; }
+.modern-resume .resume-entry { position:relative; padding:0 0 27px; }
+.modern-resume .resume-entry:last-child { padding-bottom:0; }
+.modern-resume .resume-entry:before { content:""; position:absolute; left:-29px; top:5px; width:9px; height:9px; border-radius:50%; background:#6957e8; box-shadow:0 0 0 4px #f0edff; }
+.modern-resume .resume-date { display:inline-block; color:#6957e8; background:#f4f2ff; border-radius:6px; padding:5px 8px; font-size:10px; font-weight:800; margin-bottom:9px; }
+.modern-resume .resume-entry h3,.modern-resume .project-entry h3 { font-family:"Manrope",sans-serif; color:#19233a; font-size:16px; font-weight:800; margin:0 0 5px; }
+.modern-resume .resume-organization { color:#424e67; font-size:12px; font-weight:700; margin:0 0 8px; }
+.modern-resume .resume-entry p:not(.resume-organization),.modern-resume .project-entry p:not(.project-type) { color:#68738a; font-size:13px; line-height:1.8; margin-bottom:0; }
+.modern-resume .project-entry { display:grid; grid-template-columns:42px minmax(0,1fr); gap:15px; padding:22px 0; border-top:1px solid #edf0f5; }
+.modern-resume .project-entry:first-of-type { border-top:0; padding-top:0; }
+.modern-resume .project-icon { display:grid; place-items:center; width:42px; height:42px; border-radius:13px; background:#f0edff; color:#6957e8; font-size:17px; }
+.modern-resume .project-type { color:#8b7ee8; font-size:9px; font-weight:800; letter-spacing:1.2px; margin:0 0 8px; }
+.modern-resume .project-entry p:not(.project-type) { margin:8px 0 0; }
+.modern-resume .text-link { display:inline-flex; gap:8px; margin-top:12px; color:#6957e8; font-size:12px; font-weight:800; }
+.modern-resume .text-link:hover { color:#4e3bc9; }
+.modern-resume .side-card { background:#fff; border:1px solid #e9ebf3; border-radius:20px; padding:26px; margin-bottom:20px; box-shadow:0 12px 36px rgba(25,35,58,.035); }
+.modern-resume .side-card h2 { font-size:19px; margin-bottom:22px; }
+.modern-resume .capability-list { list-style:none; padding:0; margin:0; }
+.modern-resume .capability-list li { display:flex; gap:11px; align-items:flex-start; padding:15px 0; border-top:1px solid #edf0f5; }
+.modern-resume .capability-list li:first-child { border-top:0; padding-top:0; }
+.modern-resume .capability-mark { display:grid; place-items:center; flex:0 0 23px; height:23px; border-radius:8px; background:#eaf8f2; color:#22986e; font-size:10px; }
+.modern-resume .capability-list strong { display:block; color:#263149; font-size:12px; margin:1px 0 5px; }
+.modern-resume .capability-list small { display:block; color:#748096; font-size:11px; line-height:1.7; }
+.modern-resume .tool-tags { display:flex; flex-wrap:wrap; gap:8px; }
+.modern-resume .tool-tags span { border:1px solid #e7e9f2; border-radius:8px; background:#fafbfe; padding:8px 10px; color:#566178; font-size:11px; font-weight:700; }
+.modern-resume .side-cta { border-radius:20px; padding:27px; background:#202b45; color:#fff; }
+.modern-resume .side-cta-icon { display:grid; place-items:center; width:42px; height:42px; background:rgba(255,255,255,.1); border-radius:13px; color:#c8c0ff; font-size:18px; margin-bottom:18px; }
+.modern-resume .side-cta h2 { color:#fff; font-size:20px; margin-bottom:10px; }
+.modern-resume .side-cta p { color:#c0c9da; font-size:12px; line-height:1.8; margin-bottom:20px; }
+.modern-resume .resume-footer { background:#fff; border-top:1px solid #e9ebf3; padding:28px 0 20px; text-align:center; }
+.modern-resume .footer-brand { color:#19233a; font-family:"Manrope",sans-serif; font-size:15px; font-weight:800; }
+.modern-resume .footer-brand span { color:#6957e8; }
+.modern-resume .resume-footer p { color:#7a8498; font-size:11px; margin:8px 0 0; }
+.modern-resume .resume-footer .footer-copyright { margin-top:16px; font-size:10px; }
+@media (max-width: 991.98px) {
+  .modern-resume .resume-layout { grid-template-columns:1fr; }
+  .modern-resume .resume-side-column { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; align-items:start; }
+  .modern-resume .side-card,.modern-resume .side-cta { margin-bottom:0; }
+  .modern-resume .side-cta { grid-column:1 / -1; }
+}
+@media (max-width: 575.98px) {
+  .modern-resume .resume-hero { padding-top:52px; padding-bottom:32px; }
+  .modern-resume .resume-hero h1 { letter-spacing:-1.7px; }
+  .modern-resume .resume-lead { font-size:15px; }
+  .modern-resume .resume-layout { padding-bottom:56px; }
+  .modern-resume .resume-section { padding:22px 18px; border-radius:16px; }
+  .modern-resume .resume-section-heading h2 { font-size:20px; }
+  .modern-resume .resume-side-column { display:block; }
+  .modern-resume .side-card,.modern-resume .side-cta { margin-bottom:18px; padding:22px; }
+  .modern-resume .project-entry { grid-template-columns:34px minmax(0,1fr); gap:12px; }
+  .modern-resume .project-icon { width:34px; height:34px; border-radius:10px; font-size:14px; }
+}
