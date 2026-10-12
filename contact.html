@@ -127,7 +127,7 @@
       const subject = form.elements["subject"].value.trim();
       const message = form.elements["message"].value.trim();
       const emailSubject = "[Portfolio enquiry] " + subject;
-      const emailBody = "Name: " + name + "\\nEmail: " + email + "\\nProject type: " + service + "\\nProject title: " + subject + "\\n\\nProject details:\\n" + message;
+      const emailBody = "Name: " + name + "\nEmail: " + email + "\nProject type: " + service + "\nProject title: " + subject + "\n\nProject details:\n" + message;
       const mailtoUrl = "mailto:" + recipient + "?subject=" + encodeURIComponent(emailSubject) + "&body=" + encodeURIComponent(emailBody);
       const status = document.getElementById("formStatus");
       status.textContent = "Opening your email app with the enquiry addressed to " + recipient + ". Review it and press Send to deliver your message.";
