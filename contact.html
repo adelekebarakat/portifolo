@@ -49,6 +49,10 @@
           <div><strong>Project enquiries</strong><p>Excel data analysis, virtual assistance, research, content writing, AI image/video concepts, and web development.</p></div>
         </div>
         <div class="contact-method">
+          <span class="contact-method-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+          <div><strong>Email</strong><p><a href="mailto:adelekebarakat96@gmail.com">adelekebarakat96@gmail.com</a></p><p>Click the address to email me directly.</p></div>
+        </div>
+        <div class="contact-method">
           <span class="contact-method-icon"><i class="fa fa-github" aria-hidden="true"></i></span>
           <div><strong>GitHub</strong><p>Explore the code behind my portfolio and web development work.</p><p><a href="https://github.com/adelekebarakat/portifolo" target="_blank" rel="noopener noreferrer">github.com/adelekebarakat/portifolo ↗</a></p></div>
         </div>
@@ -56,13 +60,13 @@
           <span class="contact-method-icon"><i class="fa fa-file-text-o" aria-hidden="true"></i></span>
           <div><strong>See my work first</strong><p>Review selected projects and skills before getting in touch.</p><p><a href="portfolio.html">View portfolio projects ↗</a></p></div>
         </div>
-        <div class="availability-note"><i class="fa fa-info-circle" aria-hidden="true"></i><span>To make sure enquiries reach the right place, a verified contact email or form service still needs to be connected before this page is published as a working contact form.</span></div>
+        <div class="availability-note"><i class="fa fa-info-circle" aria-hidden="true"></i><span>The enquiry form opens a pre-filled draft in your email app addressed to adelekebarakat96@gmail.com. You will need to press Send in that app.</span></div>
       </aside>
 
       <section class="contact-form-card" aria-labelledby="message-heading">
         <p class="eyebrow">PROJECT DETAILS</p>
         <h2 id="message-heading">What can I help you with?</h2>
-        <p class="card-intro">Complete the fields below to prepare your enquiry. No message is sent or stored by this page.</p>
+        <p class="card-intro">Complete the fields below to open a pre-filled email addressed to adelekebarakat96@gmail.com.</p>
         <form id="contactForm">
           <div class="form-grid">
             <div class="field">
@@ -98,7 +102,7 @@
           <div class="form-actions">
             <button class="button button-primary" type="submit">Prepare enquiry <span aria-hidden="true">↗</span></button>
           </div>
-          <p class="form-note">This is a front-end form draft. It will prepare an email draft, but the recipient address must be configured for delivery.</p>
+          <p class="form-note">Your email app will open with the details filled in. Review the message and press Send to deliver it.</p>
           <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
         </form>
       </section>
@@ -115,9 +119,20 @@
     document.getElementById("currentYear").textContent = new Date().getFullYear();
     document.getElementById("contactForm").addEventListener("submit", function (event) {
       event.preventDefault();
+      const form = event.currentTarget;
+      const recipient = "adelekebarakat96@gmail.com";
+      const name = form.elements["name"].value.trim();
+      const email = form.elements["email"].value.trim();
+      const service = form.elements["service"].value;
+      const subject = form.elements["subject"].value.trim();
+      const message = form.elements["message"].value.trim();
+      const emailSubject = "[Portfolio enquiry] " + subject;
+      const emailBody = "Name: " + name + "\\nEmail: " + email + "\\nProject type: " + service + "\\nProject title: " + subject + "\\n\\nProject details:\\n" + message;
+      const mailtoUrl = "mailto:" + recipient + "?subject=" + encodeURIComponent(emailSubject) + "&body=" + encodeURIComponent(emailBody);
       const status = document.getElementById("formStatus");
-      status.textContent = "Your enquiry details are filled in, but the recipient email has not been configured. Please connect your preferred contact email or a form service before using this form to receive messages.";
+      status.textContent = "Opening your email app with the enquiry addressed to " + recipient + ". Review it and press Send to deliver your message.";
       status.classList.add("is-visible");
+      window.location.href = mailtoUrl;
     });
   </script>
 </body>
