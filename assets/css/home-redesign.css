@@ -1,0 +1,149 @@
+/* Modern professional homepage — scoped to index.html so existing pages remain unchanged. */
+.modern-home {
+  --ink: #19233a; --muted: #68738a; --purple: #6957e8; --line: #e9ebf3;
+  margin: 0; background: #f7f8fc; color: var(--ink); font-family: "DM Sans", sans-serif;
+}
+.modern-home * { box-sizing: border-box; }
+.modern-home h1,.modern-home h2,.modern-home h3,.modern-home .brand-mark { font-family:"Manrope",sans-serif; }
+.modern-home a { text-decoration:none; }
+.modern-home .site-header { background:rgba(255,255,255,.92); border-bottom:1px solid rgba(225,228,239,.8); position:relative; z-index:10; }
+.modern-home .navbar { min-height:86px; padding-top:14px; padding-bottom:14px; }
+.modern-home .brand-mark { display:inline-flex; align-items:center; gap:11px; color:var(--ink); font-size:17px; font-weight:800; letter-spacing:-.5px; }
+.modern-home .brand-dot { display:grid; place-items:center; width:38px; height:38px; border-radius:12px; background:var(--ink); color:#fff; font-size:17px; }
+.modern-home .navbar-nav { gap:8px; }
+.modern-home .navbar .nav-link { color:#626c80; font-size:13px; font-weight:700; padding:11px 13px; }
+.modern-home .navbar .nav-link:hover,.modern-home .navbar .nav-link.active { color:var(--purple); }
+.modern-home .navbar .nav-cta { background:var(--ink); color:white; border-radius:999px; padding:12px 18px; }
+.modern-home .hero-section { display:grid; grid-template-columns:1.08fr .92fr; align-items:center; gap:45px; padding-top:84px; padding-bottom:96px; }
+.modern-home .eyebrow { color:var(--purple); font-size:10px; font-weight:800; letter-spacing:1.8px; margin-bottom:19px; }
+.modern-home .status-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:#32b88a; margin:0 9px 1px 0; box-shadow:0 0 0 4px rgba(50,184,138,.12); }
+.modern-home .hero-copy h1 { font-size:clamp(40px,5vw,66px); line-height:1.12; font-weight:800; letter-spacing:-3px; margin:0 0 24px; }
+.modern-home .hero-copy h1 span { color:var(--purple); }
+.modern-home .hero-intro { max-width:540px; font-size:16px; line-height:1.9; color:var(--muted); margin-bottom:30px; }
+.modern-home .hero-intro strong { color:var(--ink); }
+.modern-home .hero-actions { display:flex; gap:12px; flex-wrap:wrap; }
+.modern-home .button { display:inline-flex; align-items:center; justify-content:center; gap:15px; min-height:49px; padding:0 21px; border-radius:10px; font-size:13px; font-weight:700; transition:transform .2s ease,box-shadow .2s ease; }
+.modern-home .button:hover { transform:translateY(-2px); }
+.modern-home .button-primary { background:var(--purple); color:#fff; box-shadow:0 9px 22px rgba(105,87,232,.22); }
+.modern-home .button-secondary { background:#fff; border:1px solid #e1e4ef; color:var(--ink); }
+.modern-home .hero-note { display:flex; align-items:center; gap:12px; margin-top:37px; color:#8b93a5; font-size:11px; font-weight:600; }
+.modern-home .note-line { width:29px; height:1px; background:#aeb4c4; }
+.modern-home .hero-visual { min-height:430px; position:relative; display:grid; place-items:center; isolation:isolate; }
+.modern-home .hero-visual::before { content:""; position:absolute; width:310px; height:310px; border-radius:50%; background:linear-gradient(145deg,#eeebff,#e5f3ff 65%,#fdf0e5); z-index:-2; }
+.modern-home .visual-orbit { position:absolute; border:1px solid rgba(105,87,232,.16); border-radius:50%; }
+.modern-home .orbit-one { width:390px; height:390px; }
+.modern-home .orbit-two { width:460px; height:460px; border-style:dashed; border-color:rgba(105,87,232,.12); }
+.modern-home .visual-center { display:flex; align-items:center; justify-content:center; flex-direction:column; width:175px; height:175px; border:1px solid rgba(255,255,255,.9); border-radius:50%; background:linear-gradient(145deg,#fff,#f4f1ff); box-shadow:0 22px 70px rgba(47,48,91,.12); }
+.modern-home .visual-initials { font:800 58px/1 "Manrope",sans-serif; letter-spacing:-5px; color:var(--purple); }
+.modern-home .visual-caption { font-size:9px; line-height:1.5; text-align:center; font-weight:800; letter-spacing:2px; color:#737c91; margin-top:12px; }
+.modern-home .floating-card { display:flex; gap:12px; align-items:center; position:absolute; min-width:190px; padding:14px 16px; border:1px solid rgba(231,233,243,.9); background:rgba(255,255,255,.96); border-radius:14px; box-shadow:0 15px 45px rgba(39,45,77,.09); }
+.modern-home .floating-card strong,.modern-home .floating-card small { display:block; }
+.modern-home .floating-card strong { font-size:12px; margin-bottom:4px; }
+.modern-home .floating-card small { color:#8a92a4; font-size:10px; }
+.modern-home .floating-icon { display:grid; place-items:center; width:37px; height:37px; border-radius:11px; font-size:16px; }
+.modern-home .icon-purple { background:#eeebff; color:#6957e8; }
+.modern-home .icon-orange { background:#fff0e7; color:#e88a4a; }
+.modern-home .icon-green { background:#e5f8f0; color:#229b71; }
+.modern-home .card-data { top:58px; left:-2px; }
+.modern-home .card-creative { top:165px; right:-6px; }
+.modern-home .card-writing { bottom:50px; left:12px; }
+.modern-home .visual-spark { position:absolute; color:#8d7ff0; }
+.modern-home .spark-one { right:45px; top:54px; font-size:30px; }
+.modern-home .spark-two { left:65px; bottom:50px; font-size:23px; }
+.modern-home .section-wrap { padding:84px 0; }
+.modern-home .services-section { background:#fff; border-top:1px solid #eff0f6; border-bottom:1px solid #eff0f6; }
+.modern-home .section-heading { max-width:630px; margin-bottom:36px; }
+.modern-home .section-heading h2,.modern-home .featured-copy h2,.modern-home .tools-layout h2,.modern-home .closing-card h2 { color:var(--ink); font-size:clamp(30px,3.4vw,43px); font-weight:800; line-height:1.2; letter-spacing:-1.7px; margin-bottom:16px; }
+.modern-home .section-heading>p:last-child,.modern-home .featured-copy>p:not(.eyebrow),.modern-home .closing-card p:not(.eyebrow) { color:var(--muted); line-height:1.85; font-size:14px; max-width:550px; }
+.modern-home .service-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:17px; }
+.modern-home .service-card { border:1px solid var(--line); border-radius:16px; background:#fff; padding:25px 21px 23px; min-height:285px; transition:transform .2s ease,box-shadow .2s ease; }
+.modern-home .service-card:hover { transform:translateY(-4px); box-shadow:0 18px 40px rgba(33,43,75,.07); }
+.modern-home .service-icon { display:grid; place-items:center; width:46px; height:46px; border-radius:13px; font-size:19px; margin-bottom:21px; }
+.modern-home .service-purple { background:#eeebff; color:#6957e8; }
+.modern-home .service-orange { background:#fff0e7; color:#e88a4a; }
+.modern-home .service-green { background:#e5f8f0; color:#229b71; }
+.modern-home .service-blue { background:#e6f2ff; color:#3989d8; }
+.modern-home .service-number { font-size:9px; color:#9aa1b1; letter-spacing:1.4px; font-weight:800; margin-bottom:8px; }
+.modern-home .service-card h3 { font-size:16px; font-weight:800; letter-spacing:-.3px; margin-bottom:12px; }
+.modern-home .service-card>p:not(.service-number) { color:var(--muted); font-size:12px; line-height:1.8; min-height:86px; }
+.modern-home .tag-list { display:flex; flex-wrap:wrap; gap:6px; margin-top:15px; }
+.modern-home .tag-list span { background:#f5f6fa; color:#737c90; border-radius:5px; padding:5px 7px; font-size:9px; font-weight:700; }
+.modern-home .featured-layout { display:grid; grid-template-columns:.9fr 1.1fr; gap:65px; align-items:center; }
+.modern-home .featured-copy h2 { max-width:480px; }
+.modern-home .project-points { list-style:none; padding:0; margin:23px 0 27px; }
+.modern-home .project-points li { display:flex; align-items:flex-start; gap:10px; margin-bottom:13px; color:#566177; font-size:12px; line-height:1.7; }
+.modern-home .check-mark { display:grid; place-items:center; flex:0 0 20px; width:20px; height:20px; border-radius:50%; color:#218b68; background:#e1f7ed; font-size:11px; font-weight:800; }
+.modern-home .text-link { color:var(--purple); font-size:13px; font-weight:800; }
+.modern-home .text-link span { margin-left:8px; }
+.modern-home .dashboard-preview { padding:25px; border:1px solid #e8eaf3; border-radius:19px; background:#fff; box-shadow:0 22px 70px rgba(31,42,76,.07); }
+.modern-home .dashboard-top { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:22px; }
+.modern-home .dashboard-kicker { font-size:8px; font-weight:800; letter-spacing:1.6px; color:#929bad; }
+.modern-home .dashboard-top h3 { margin:6px 0 0; font-size:17px; font-weight:800; }
+.modern-home .excel-label { background:#e3f7eb; color:#168451; padding:6px 9px; border-radius:6px; font-size:9px; font-weight:800; }
+.modern-home .metric-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.modern-home .metric-card { padding:14px; border:1px solid #edf0f6; border-radius:10px; background:#fbfcfe; }
+.modern-home .metric-card span,.modern-home .metric-card small { display:block; color:#8b94a7; font-size:10px; }
+.modern-home .metric-card strong { display:block; color:var(--ink); font:800 21px/1.5 "Manrope",sans-serif; letter-spacing:-.7px; }
+.modern-home .metric-card small { font-size:9px; }
+.modern-home .mini-chart { margin-top:17px; padding:15px 14px 9px; background:#fbfcfe; border:1px solid #edf0f6; border-radius:10px; }
+.modern-home .chart-title { display:flex; align-items:center; justify-content:space-between; font-size:10px; color:#69748a; font-weight:700; }
+.modern-home .chart-legend { font-size:9px; color:#9aa2b2; }
+.modern-home .chart-legend i { display:inline-block; width:7px; height:7px; border-radius:2px; background:#7667e9; margin-right:5px; }
+.modern-home .chart-bars { height:95px; display:flex; align-items:flex-end; gap:8px; padding-top:12px; border-bottom:1px solid #e9ecf4; background:repeating-linear-gradient(to bottom,transparent 0,transparent 30px,#eef0f6 31px); }
+.modern-home .chart-bars span { flex:1; border-radius:4px 4px 0 0; background:linear-gradient(180deg,#9184f4,#6957e8); opacity:.86; }
+.modern-home .chart-months { display:flex; justify-content:space-between; padding-top:7px; font-size:8px; color:#9ba3b3; }
+.modern-home .dashboard-footnote { margin:12px 0 0; color:#9ba3b3; font-size:9px; line-height:1.6; }
+.modern-home .tools-section { background:#fff; border-top:1px solid #eff0f6; border-bottom:1px solid #eff0f6; }
+.modern-home .tools-layout { display:grid; grid-template-columns:.8fr 1.2fr; gap:55px; align-items:center; }
+.modern-home .tools-layout h2 { margin-bottom:0; }
+.modern-home .tool-cloud { display:flex; flex-wrap:wrap; gap:10px; }
+.modern-home .tool-cloud span { padding:12px 16px; background:#f8f9fc; border:1px solid #e9ebf3; border-radius:9px; color:#5d6880; font-size:12px; font-weight:700; }
+.modern-home .closing-section { padding-top:72px; padding-bottom:72px; }
+.modern-home .closing-card { display:flex; justify-content:space-between; align-items:center; gap:30px; padding:44px 48px; border-radius:20px; background:linear-gradient(115deg,#202944,#35315e); color:#fff; }
+.modern-home .closing-card .eyebrow { color:#bcb4ff; }
+.modern-home .closing-card h2 { color:#fff; font-size:clamp(27px,3vw,37px); }
+.modern-home .closing-card p:not(.eyebrow) { color:#c6ccdc; margin-bottom:0; }
+.modern-home .button-light { flex:0 0 auto; background:#fff; color:var(--ink); }
+.modern-home .modern-footer { display:flex; flex-wrap:wrap; gap:18px; justify-content:space-between; align-items:center; border-top:1px solid #e7e9f1; padding-top:25px; padding-bottom:30px; }
+.modern-home .footer-brand { color:var(--ink); font-size:12px; font-weight:800; }
+.modern-home .footer-brand span { display:block; margin-top:5px; color:#939bad; font-size:10px; font-weight:500; }
+.modern-home .footer-links { display:flex; flex-wrap:wrap; gap:17px; }
+.modern-home .footer-links a,.modern-home .modern-footer>p { color:#8790a3; font-size:10px; }
+.modern-home .modern-footer>p { margin:0; }
+@media(max-width:991.98px) {
+ .modern-home .hero-section { grid-template-columns:1fr; gap:20px; padding-top:64px; padding-bottom:60px; }
+ .modern-home .hero-copy { max-width:700px; }
+ .modern-home .hero-visual { min-height:420px; }
+ .modern-home .service-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .modern-home .featured-layout { grid-template-columns:1fr; gap:35px; }
+ .modern-home .tools-layout { grid-template-columns:1fr; gap:25px; }
+ .modern-home .navbar-nav { align-items:stretch!important; padding:15px 0; }
+ .modern-home .navbar .nav-cta { display:inline-block; text-align:center; margin-top:5px; }
+}
+@media(max-width:575.98px) {
+ .modern-home .hero-section { padding-top:49px; }
+ .modern-home .hero-copy h1 { font-size:41px; letter-spacing:-2px; }
+ .modern-home .hero-intro { font-size:14px; }
+ .modern-home .hero-visual { min-height:345px; transform:scale(.87); margin:-10px -18px; }
+ .modern-home .hero-visual::before { width:250px; height:250px; }
+ .modern-home .orbit-one { width:320px; height:320px; }
+ .modern-home .orbit-two { width:375px; height:375px; }
+ .modern-home .visual-center { width:145px; height:145px; }
+ .modern-home .visual-initials { font-size:48px; }
+ .modern-home .floating-card { min-width:165px; padding:11px; }
+ .modern-home .card-data { left:-3px; top:26px; }
+ .modern-home .card-creative { right:-5px; top:130px; }
+ .modern-home .card-writing { left:-1px; bottom:24px; }
+ .modern-home .section-wrap { padding:58px 0; }
+ .modern-home .service-grid { grid-template-columns:1fr; }
+ .modern-home .service-card { min-height:auto; }
+ .modern-home .service-card>p:not(.service-number) { min-height:auto; }
+ .modern-home .dashboard-preview { padding:15px; }
+ .modern-home .metric-card { padding:10px; }
+ .modern-home .metric-card strong { font-size:18px; }
+ .modern-home .closing-card { align-items:flex-start; flex-direction:column; padding:30px 24px; }
+ .modern-home .modern-footer { align-items:flex-start; flex-direction:column; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .modern-home *,.modern-home *::before,.modern-home *::after { transition:none!important; animation:none!important; scroll-behavior:auto!important; }
+}
